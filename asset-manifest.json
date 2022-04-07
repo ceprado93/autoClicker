@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/autoClicker/static/css/main.6a0f5d14.css",
-    "main.js": "/autoClicker/static/js/main.81924664.js",
+    "main.js": "/autoClicker/static/js/main.5527f40e.js",
     "static/media/coins.png": "/autoClicker/static/media/coins.f842b1634046ae9d23b2.png",
     "static/media/chatbot.png": "/autoClicker/static/media/chatbot.d8ac62104d4b88a08415.png",
     "index.html": "/autoClicker/index.html",
     "main.6a0f5d14.css.map": "/autoClicker/static/css/main.6a0f5d14.css.map",
-    "main.81924664.js.map": "/autoClicker/static/js/main.81924664.js.map"
+    "main.5527f40e.js.map": "/autoClicker/static/js/main.5527f40e.js.map"
   },
   "entrypoints": [
     "static/css/main.6a0f5d14.css",
-    "static/js/main.81924664.js"
+    "static/js/main.5527f40e.js"
   ]
 }
