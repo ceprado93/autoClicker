@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ceprado93.github.io/autoClicker/",
+  "homepage": "https://ceprado93.github.io/autoClicker",
   "name": "autoclicker",
   "version": "0.1.0",
   "private": true,
@@ -42,6 +42,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^14.0.4"
+    "@testing-library/user-event": "^14.0.4",
+    "gh-pages": "^3.2.3"
   }
 }
