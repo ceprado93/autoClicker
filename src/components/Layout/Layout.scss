@@ -1,0 +1,122 @@
+@import "../Variables.scss";
+
+//NAVBAR
+
+.navigation {
+  width: calc(100vw);
+  background-color: $dark-blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    height: 2rem;
+    padding: 1.5rem 0;
+    img {
+      width: 100%;
+      height: 2rem;
+      object-fit: contain;
+      object-position: left;
+    }
+  }
+  .logoLink {
+    width: calc(25vw - 3rem);
+    padding-left: 3rem;
+    background-color: $darker-blue;
+  }
+}
+
+//FOOTER
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: $dark-blue;
+  display: flex;
+  align-items: center;
+  .centerDiv {
+    padding: 2rem 3rem;
+    height: calc(10vh - 4rem);
+
+    width: calc(50vw - 6rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    a {
+      width: 8vw;
+      height: 2rem;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    p {
+      color: white;
+      line-height: 16px;
+      font-weight: 0.5rem;
+      margin: 0;
+      margin-top: 0.5rem;
+    }
+  }
+  .leftDiv {
+    background-color: $darker-blue;
+    width: 25vw;
+    height: 10vh;
+    padding: 0;
+  }
+  .rightDiv {
+    width: 25vw;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  //NAVBAR
+
+  .navigation {
+    background-color: $darker-blue;
+    .logoLink {
+      width: calc(50vw - 3rem);
+      padding-left: 2rem;
+    }
+  }
+
+  //FOOTER
+
+  footer {
+    background-color: $darker-blue;
+
+    .centerDiv {
+      padding: 2rem 3rem;
+      height: calc(10vh - 4rem);
+      width: calc(100vw - 6rem);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      a {
+        width: 30vw;
+        height: 2rem;
+        margin-right: 2rem;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      p {
+        color: white;
+        line-height: 16px;
+        font-weight: 0.5rem;
+        margin: 0;
+        margin-top: 0.5rem;
+      }
+    }
+    .leftDiv {
+      width: 0;
+    }
+    .rightDiv {
+      width: 0;
+    }
+  }
+}

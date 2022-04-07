@@ -1,0 +1,253 @@
+@import "../Variables.scss";
+
+//HOME
+
+.home {
+  height: calc(100vh - 5rem - 10vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+  }
+  input {
+    padding: 1rem 2rem;
+    width: 25vw;
+  }
+  .alertText {
+    color: red;
+    animation: 5s shake infinite;
+  }
+  @keyframes shake {
+    0% {
+      transform: skewX(-15deg);
+    }
+    1% {
+      transform: skewX(15deg);
+    }
+    2% {
+      transform: skewX(-15deg);
+    }
+    3% {
+      transform: skewX(15deg);
+    }
+    4% {
+      transform: skewX(0deg);
+    }
+    100% {
+      transform: skewX(0deg);
+    }
+  }
+  button {
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: $green-blue;
+    color: $dark-blue;
+    border: none;
+    width: 10vw;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+//GAME
+.exitLink {
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  cursor: pointer;
+}
+.game {
+  width: 100vw;
+  height: calc(100vh - 5rem - 10vh);
+  display: flex;
+  .playerColumn {
+    width: 25vw;
+    background-color: $dark-blue;
+    padding: 2rem 0;
+    div {
+      width: 76%;
+      margin: 1rem 4%;
+      padding: 2% 8%;
+      height: 5vh;
+      background-color: $medium-blue;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      color: white;
+    }
+    .instructionsDiv {
+      height: 40vh;
+    }
+  }
+  .game_column {
+    width: 75vw;
+    background-color: #f4f4f4;
+    .count_box {
+      width: 90%;
+      margin: 3rem 5%;
+      background-color: rgb(175, 175, 175);
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      img {
+        width: 10%;
+        margin-bottom: 2rem;
+      }
+      button {
+        padding: 1rem 2rem;
+        width: 30%;
+        border: none;
+        border-radius: 8px;
+        background-color: $green-blue;
+        color: $dark-blue;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+    }
+    .auto_box {
+      width: 90%;
+      margin: 2rem 5%;
+      background-color: rgb(175, 175, 175);
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      img {
+        width: 8%;
+        margin-right: 2rem;
+      }
+      button {
+        padding: 1rem 2rem;
+        width: 30%;
+        border: none;
+        border-radius: 8px;
+        background-color: $green-blue;
+        color: $dark-blue;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      .disabled {
+        background-color: gray;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  //HOME
+  .home {
+    height: calc(100vh - 5rem - 10vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 2.4rem;
+      text-transform: uppercase;
+    }
+    input {
+      padding: 1rem 2rem;
+      width: 50vw;
+    }
+
+    button {
+      margin: 2rem 0;
+      padding: 1rem 2rem;
+      background-color: $green-blue;
+      color: $dark-blue;
+      border: none;
+      width: 50vw;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  //GAME
+  .exitLink {
+    right: 2rem;
+  }
+  .game {
+    width: 100vw;
+    height: calc(100vh - 5rem - 10vh);
+    display: flex;
+    flex-direction: column;
+    .playerColumn {
+      width: 100vw;
+      background-color: $dark-blue;
+      padding: 0;
+      div {
+        width: 76%;
+        margin: 0.8rem 4%;
+        padding: 2% 8%;
+        height: 4vh;
+        background-color: $medium-blue;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        color: white;
+      }
+      .instructionsDiv {
+        height: 30vh;
+      }
+    }
+    .game_column {
+      width: 100vw;
+      background-color: #f4f4f4;
+      .count_box {
+        width: 92%;
+        margin: 1rem 4%;
+        height: 10vh;
+        flex-direction: row;
+        justify-content: center;
+        img {
+          width: 10%;
+          margin-bottom: 0;
+          margin-right: 1rem;
+        }
+        button {
+          padding: 1rem 2rem;
+          width: 60%;
+        }
+      }
+      .auto_box {
+        width: 92%;
+        margin: 1rem 4%;
+        height: 10vh;
+        img {
+          width: 10%;
+          margin-right: 1rem;
+        }
+        button {
+          padding: 1rem 2rem;
+          width: 60%;
+          border: none;
+          border-radius: 8px;
+          background-color: $green-blue;
+          color: $dark-blue;
+          font-size: 1.2rem;
+        }
+        .disabled {
+          background-color: gray;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
