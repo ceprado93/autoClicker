@@ -7,7 +7,7 @@ const Footer = () => {
       <footer>
         <div className="leftDiv"></div>
         <div className="centerDiv">
-          <Link to="/">
+          <Link to="/autoClicker">
             <img src="https://www.bbvanexttechnologies.com/wp-content/themes/bbva/images/logo.png" alt="logo" />
           </Link>
           <p>© BBVA Next Technologies - 2022</p>

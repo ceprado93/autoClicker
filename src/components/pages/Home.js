@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Pages.scss";
 
@@ -7,11 +7,14 @@ const Home = () => {
   const [alert, setAlert] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    return () => {
+      document.body.style.zoom = "100%";
+    };
+  }, []);
+
   const handleAction = () => {
     let url = "/game/" + userName;
-    setAlert(false);
-    console.log(window.location.pathname);
-
     userName ? navigate(url) : setAlert(true);
   };
 
@@ -19,10 +22,10 @@ const Home = () => {
     <>
       <section className="home">
         <h1>Auto clicker</h1>
-        <p>Add your player's name</p>
+        <p>Add your player's name below to get started.</p>
         <input type="text" placeholder="User name" name="usernasme" onChange={(e) => setUsernName(e.target.value)} />
         {alert && <p className="alertText">* Add username</p>}
-        <button onClick={() => handleAction()}>Join</button>
+        <button onClick={() => handleAction()}>Start</button>
       </section>
     </>
   );

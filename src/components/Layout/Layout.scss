@@ -116,7 +116,7 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 675px) {
   //NAVBAR
 
   .navigation {
@@ -131,10 +131,10 @@ footer {
 
   footer {
     background-color: $darker-blue;
-
+    height: auto;
     .centerDiv {
       padding: 2rem 3rem;
-      height: calc(10vh - 4rem);
+      height: auto;
       width: calc(100vw - 6rem);
       display: flex;
       flex-direction: row;

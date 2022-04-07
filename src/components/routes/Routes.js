@@ -6,7 +6,7 @@ const PageRoutes = () => {
   return (
     <>
       <Routes>
-        <Route path="/" exact element={<Home />} />
+        <Route path="/autoClicker" exact element={<Home />} />
         <Route path="/game/:user" element={<Game />} />
         <Route path="*" element={<Home />} />
       </Routes>
